@@ -1,0 +1,6 @@
+<div class="product-image">
+    <img src={{@src}} alt="">
+    {{#if @isDetails}}
+    <LinkTo @route='item' @model={{@product.id}} class="product-link">Details</LinkTo>
+    {{/if}}
+</div>

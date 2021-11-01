@@ -1,0 +1,18 @@
+{{page-title "Item"}}
+
+<GeneralContainer>
+    <div class="product item-details-page">
+        <Product::Image @src={{this.model.image}} />
+        <Product::Details @product={{this.model}} @isDetails={{true}} />
+    </div>
+<h5 class="mt-5">
+    Benefits
+</h5>
+<ul>
+    {{#each this.model.features as |feature|}}
+        <li>{{feature}}</li>
+    {{/each}}
+</ul>
+</GeneralContainer>
+
+{{outlet}}

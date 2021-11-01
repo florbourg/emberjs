@@ -1,5 +1,12 @@
 {{page-title "Emberjs Project"}}
 
-<h1>Welcome Page</h1>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <LinkTo class="navbar-brand" @route='index'>Home</LinkTo>
+        <LinkTo @route='cart' class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </LinkTo>
+    </div>
+</nav>
 
 {{outlet}}

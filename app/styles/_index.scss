@@ -1,0 +1,22 @@
+.cart-icon {
+  color: rgb(255, 255, 255);
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+    color: rgba(255, 109, 36, 0.75);
+  }
+}
+
+.container {
+  @media screen and (min-width: 650px) {
+    width: 800px;
+  }
+}
