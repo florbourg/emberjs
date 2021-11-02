@@ -1,15 +1,26 @@
 {{page-title "Cart"}}
-<main class="container mt-5 ">
+<GeneralContainer>
     <h1>Shopping Cart</h1>
     <section class="text-end mt-5">
-        <div class="row">
-            <span class="col">Subtotal</span>
-            <span class="col">{{currency this.subtotal}}</span>
+        {{#each this.shopping.itemList as |item|}}
+        <div class="d-flex align-items-center cart-item">
+            <div class="cart-item-thumbnail">
+                <img src={{item.image}} alt="">
+            </div>
+            <div class="cart-item-quantity"><input 
+            type="number" 
+            class="ml-auto naked" 
+            value={{item.count}}
+            {{on "input" (fn this.updateItemCount item)}}
+            ></div>
+            
+            <div class=" cart-item-details">
+                <h4> {{item.name}} </h4>
+            </div>
         </div>
-        <div class="row">
-            <span class="col">Tax</span>
-            <span class="col">{{currency this.tax}}</span>
-        </div>
+        {{/each}}
+    </section>
+    <section class="text-end mt-5">
         <div class="row">
             <span class="col">Total</span>
             <span class="col">{{currency this.total}}</span>
@@ -17,5 +28,7 @@
     </section>
 
     <button type="button" class="btn btn-success float-end mt-5">Check Out</button>
-</main>
+</GeneralContainer>
+
+
 {{outlet}}

@@ -3,10 +3,7 @@ export const products = [
     id: 'GR1',
     name: 'Green Tea',
     description: 'Green tea in envelopes',
-    price: {
-      original: 3.11,
-      current: 3.11,
-    },
+    price: 3.11,
     features: [
       'Contains healthy bioactive compounds. Green tea is more than just a hydrating beverage',
       'May improve brain function',
@@ -23,10 +20,7 @@ export const products = [
     id: 'SR1',
     name: 'Strawberries',
     description: 'Strawberries',
-    price: {
-      original: 5,
-      current: 5,
-    },
+    price: 5,
     features: [
       'May support heart health',
       'May regulate blood sugar',
@@ -40,10 +34,7 @@ export const products = [
     id: 'CF1',
     name: 'Coffee',
     description: 'Coffee',
-    price: {
-      original: 11.23,
-      current: 11.23,
-    },
+    price: 11.23,
     features: [
       'boosts your physical performance',
       'may help you lose weight',

@@ -1,1 +1,14 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <LinkTo class="navbar-brand" @route='index'>Home</LinkTo>
+        <LinkTo @route='cart' class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            {{#if this.shopping.itemList.length}}
+            <span class="cart-count d-inline-flex justify-content-center align-items-center">{{this.itemCount}}</span>
+            {{/if}}
+        </LinkTo>
+
+    </div>
+</nav>
+
 <main class="container mt-5">{{yield}}</main>

@@ -1,14 +1,9 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
-export default class CartController extends Controller {
-  @service shopping;
 
-  get total() {
-    return this.shopping.itemList.reduce((acc, item) => {
-      return acc + item.price * item.count;
-    }, 0);
-  }
+export default class IndexController extends Controller {
+  @service shopping;
 
   @action
   updateItemCount(item, event) {

@@ -1,0 +1,44 @@
+.cart-item {
+  width: 100%;
+  border-bottom: 1px dashed lightgrey;
+  .cart-item-thumbnail {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+
+    > img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .font-weight-bold {
+    font-weight: 600;
+  }
+
+  .cart-item-details {
+    text-align: end;
+    width: 20%;
+  }
+
+  .cart-item-quantity {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    //background-color: #ff6d24;
+  }
+
+  input {
+    font-size: 14px;
+    background: none;
+    color: #ff6d24;
+  }
+
+  .naked {
+    border: 1px solid #ff6d24;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    margin: 0px 15px;
+  }
+}

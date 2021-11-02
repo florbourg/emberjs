@@ -1,11 +1,6 @@
 <div class="product-details">
     <section>
         <h4>{{@product.name}}</h4>
-        <span class={{unless @isDetails 'text-warning h4' "text-black-50"}}>{{currency @product.price.original}} each</span>
-    </section>
-    <section class="quantity-section">
-        <button type="button" class="btn btn-primary">-</button>
-        <input type="text" class="form-control naked" value="1">
-        <button type="button" class="btn btn-primary">+</button>
+        <span class={{unless @isDetails 'text-warning h4' "text-black-50"}}>{{currency @product.price}} each</span>
     </section>
 </div>
