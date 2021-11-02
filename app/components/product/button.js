@@ -8,6 +8,13 @@ export default class ProductButtonComponent extends Component {
   @action
   addToCart() {
     const { product } = this.args;
-    this.shopping.addItem(product);
+
+    const item = {
+      name: product.name,
+      image: product.image,
+      price: product.price,
+    };
+
+    this.shopping.addItem(item);
   }
 }
